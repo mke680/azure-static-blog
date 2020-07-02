@@ -3,34 +3,34 @@ variable "location" {}
 
 # VM Credentials
 variable "admin_username" {
-  type        = "string"
+  type        = string
   description = "Administrator user name for virtual machine"
 }
 
 variable "admin_password" {
-  type        = "string"
+  type        = string
   description = "Password must meet Azure complexity requirements"
 }
 
 # Prefix for resouce naming
 variable "prefix" {
-  type = "string"
+  type = string
   #default = "my"
 }
 
 variable "loc_prefix" {
-  type = "string"
+  type = string
   #default = "my"
 }
 
 variable "int_prefix" {
-  type    = "string"
+  type    = string
   default = "01"
 }
 
 # Azure Resource Tags
 variable "tags" {
-  type = "map" # Maps are collection of string values
+  #type = "map" # Maps are collection of string values
 
   default = {
     Environment = "Terraform DI"
