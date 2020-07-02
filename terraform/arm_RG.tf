@@ -7,7 +7,7 @@ provider "azurerm" {
 }
 
 # Create Resource Group
-resource "azurerm_resource_group" "static_blog" {
+resource "azurerm_resource_group" "static_website" {
   name     = "AZ-${var.loc_prefix}-RG-${var.prefix}-${var.int_prefix}"
   location = "${var.location}"
 }
