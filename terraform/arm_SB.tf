@@ -9,9 +9,8 @@ resource "azurerm_storage_account" "blog_blob" {
   enable_https_traffic_only = true
 
   static_website {
-    enabled = true
-    #index_document        = "index.html"
-    #error_404_document    = "error.html"
+    index_document        = "index.html"
+    error_404_document    = "error.html"
   }
 }
 
