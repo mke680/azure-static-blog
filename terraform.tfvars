@@ -1,5 +1,5 @@
-location = "australiaeast"
-loc_prefix = "AUE"
-prefix = "BLOG"
+location       = "australiaeast"
+loc_prefix     = "AUE"
+prefix         = "BLOG"
 admin_username = "Luarana"
 admin_password = "Password66"
