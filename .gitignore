@@ -4,12 +4,12 @@
 #/*
 !/jobs
 !/.gitignore
-!/.Terraform
 !/*.xml
 
 #ignore all files in jobs subdirectories except for folders
 #note: git doesn't track folders, only file content
 jobs/**
+!/Terraform/
 !jobs/**/
 
 #uncomment the following line to save next build numbers with config
