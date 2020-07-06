@@ -1,17 +1,14 @@
-#Learn more about Jenkins and JENKINS_HOME directory for which this file is intended.
-#  http://jenkins-ci.org/
-#  https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins
+#Terraform Ignore File
 
 #ignore all JENKINS_HOME except jobs directory, root xml config, and .gitignore file
 #/*
-!/jobs
 !/.gitignore
 !/*.xml
 
 #ignore all files in jobs subdirectories except for folders
 #note: git doesn't track folders, only file content
-jobs/**
-!jobs/**/
+#terraform/**
+!terraform/
 
 #uncomment the following line to save next build numbers with config
 #!jobs/**/nextBuildNumber

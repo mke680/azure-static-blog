@@ -1,6 +1,6 @@
 # Create Blob Storage For Static Website
 resource "azurerm_storage_account" "blog_blob" {
-  name                      = "AZ-${var.loc_prefix}-SR-${var.prefix}-${var.int_prefix}"
+  name                      = "AZ${var.loc_prefix}SA${var.prefix}${var.int_prefix}"
   resource_group_name       = azurerm_resource_group.static_blog.name
   location                  = azurerm_resource_group.static_blog.location
   account_tier              = "Standard"
@@ -15,7 +15,7 @@ resource "azurerm_storage_account" "blog_blob" {
 }
 
 resource "azurerm_storage_container" "blog_blob" {
-  name                  = "AZ-${var.loc_prefix}-SC-${var.prefix}-${var.int_prefix}"
+  name                  = "AZ${var.loc_prefix}SC${var.prefix}${var.int_prefix}"
   storage_account_name  = azurerm_storage_account.blog_blob.name
   container_access_type = "private"
 }
